@@ -10,3 +10,5 @@ if(!empty($uri)) {
 }
 
 require_once 'index.php';
+
+
