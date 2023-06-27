@@ -1,60 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        body {
-          font-family: Arial, Helvetica, sans-serif;
-          background-color: aquamarine;
-        }
-        div{
-          background-color: rgba( 255, 255, 255);
-          position: absolute;
-          top: 50%;
-          border-radius: 20px;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          padding: 60px;
-          color: black;
-        }
-        input{
-          padding: 10px;
-          outline: none;
-          font-size: 20px;
-        }
-        button{
-          background-color: dodgerblue;
-          border: none;
-          border-radius: 10px;
-          padding: 15px;  
-          margin: 5px;
-          align-items: center;
-          width: 96%;
-          color: white;
-          font-size: 20px;
-        }
-        button:hover{
-          background-color: #00a8ff;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: aquamarine;
+    }
+
+    div {
+      background-color: rgba(255, 255, 255);
+      position: absolute;
+      top: 50%;
+      border-radius: 20px;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 60px;
+      color: black;
+    }
+
+    input {
+      padding: 10px;
+      outline: none;
+      font-size: 20px;
+      margin: 1rem 1rem 1rem 0;
+    }
+
+    button {
+      background-color: dodgerblue;
+      border: none;
+      border-radius: 10px;
+      padding: 15px;
+      margin: 5px;
+      align-items: center;
+      width: 96%;
+      color: white;
+      font-size: 20px;
+    }
+
+    button:hover {
+      background-color: #00a8ff;
+    }
+  </style>
 </head>
+
 <body>
-    <div>
+  <div>
     <h1>Cadastrar</h1>
-    <form method="POST" action="">
+    <form method="POST" action="/user/create">
+      <div>
         <label for="name">Nome:</label>
         <input type="text" id="name" name="name" required>
-      
+
         <label for="email">Email:</label>
         <input type="email" id="email" name="email" required>
-      
+
         <label for="password">Senha:</label>
         <input type="password" id="password" name="password" required>
-      
+
         <button type="submit">Registrar</button>
-      </form>
-    </div>
+      </div>
+    </form>
+  </div>
 </body>
+
 </html>

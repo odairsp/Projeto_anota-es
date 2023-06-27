@@ -14,6 +14,17 @@ class User {
 
     return $data;
   }
+
+  
+  public function gravar(array $array)
+  {
+
+    $db = Database::getInstance();
+
+    $db->insert($this->table, $array);
+
+    return "Tudo ok";
+  }
 }
 
 
