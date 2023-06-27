@@ -5,7 +5,7 @@ namespace App\Models;
 use Core\Database;
 
 class User {
-  private $table = 'usuarios';
+  private $table = 'users';
 
   public function find($columns = '*', $conditions = null) {
     $db = Database::getInstance();
