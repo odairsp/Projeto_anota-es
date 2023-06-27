@@ -1,0 +1,44 @@
+config
+
+<?php
+
+return [
+    'db' => [
+        'driver' => 'mysql',
+        'host' => 'localhost',
+        'dbname' => 'pw3Vini',
+        'user' => 'root',
+        'pass' => '123456'
+    ],
+];
+
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+mysql
+
+use pw3Vini;
+
+create table users(
+id int auto_increment primary key,
+name varchar(100),
+email varchar(150),
+password varchar(100)
+);
+
+insert into users (name, email, password)values(
+'jose',
+'jose@email.com',
+'12345678'
+);
+
+create table anotacoes(
+id int auto_increment primary key,
+text varchar(200),
+user_id int
+);
+
+insert into anotacoes (text, user_id)values(
+'Boleto mensal',
+2
+);
